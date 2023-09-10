@@ -266,6 +266,10 @@ select {
   font-weight: bold;
 }
 
+span {
+  font-weight: 600;
+}
+
 #capital {
   padding-bottom: 46px;
 }
