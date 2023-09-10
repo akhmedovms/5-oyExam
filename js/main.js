@@ -1,6 +1,7 @@
 const countries = document.querySelector(".countries");
 const input = document.querySelector("#input");
 const select = document.querySelector("#select");
+const toTop = document.querySelector(".to-up");
 
 const countryName = document.getElementsByClassName("countryName");
 const regionName = document.getElementsByClassName("regions");
@@ -29,6 +30,14 @@ lightBtn.addEventListener("click", () => {
   localStorage.setItem("mode", "");
 });
 
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+});
+
 let data = [];
 
 import getData from "./request.js";
@@ -40,17 +49,6 @@ getData("https://countries-api-v7sn.onrender.com/countries?limit=250")
   .catch((error) => {
     console.log(error);
   });
-
-// fetch("https://countries-api-v7sn.onrender.com/countries?limit=250")
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     getData(data.data);
-//   })
-//   .catch((error) => {
-//     console.error("Error Fetching data", error);
-//   });
 
 const updateUI = (data) => {
   countries.innerHTML = "";
