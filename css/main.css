@@ -203,6 +203,7 @@ input::placeholder {
   outline: none;
   background-color: inherit;
   padding-right: 10px;
+  color: var(--black-color);
 }
 .select {
   width: 25%;
