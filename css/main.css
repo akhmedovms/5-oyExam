@@ -369,7 +369,7 @@ h2 {
 }
 
 .bor {
-  background-color: var(--light-bg-color);
+  background-color: var(--secondary-color);
   color: var(--black-color);
 }
 
