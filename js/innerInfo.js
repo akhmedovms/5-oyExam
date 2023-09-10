@@ -60,9 +60,7 @@ const updateUiIn = (data) => {
   <img src=${flags.svg} alt="" flag img>
   </div>
   <div class="all-info">
-
   <div class="common-Name"><h2>${name.common}</h2></div>
-
   <div class="infos-dis">
   <div class="left-info">
   <p><span>Native Name:</span> ${name.nativeName}</p>
@@ -77,8 +75,6 @@ const updateUiIn = (data) => {
     <p><span>languages: </span>${languages}</p>
   </div>
   </div>
-
-
   <div class="bottom-links">
   <p class="br-btn-wr">
   <span>Border Countries:</span>
@@ -95,9 +91,7 @@ const updateUiIn = (data) => {
 </p>
     </p>
   </div>
-
   </div>
-
   </div>
   `;
 };
